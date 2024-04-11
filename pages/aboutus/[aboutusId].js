@@ -11,6 +11,7 @@ const DeveloperDetail=()=>{
         ]
     const router=useRouter();
     const developerid=router.query.aboutusId;
+    console.log("query",router.query)
     console.log("developerid>>>",developerid) 
     const developer = details.find(data => parseInt(data.id) ===  parseInt(developerid));
 return (
